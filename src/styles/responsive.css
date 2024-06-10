@@ -1,0 +1,132 @@
+@media screen and (max-width: 450px) {
+    .hero {
+        min-height: 300px;
+        background: url('/images/hero-image_4-small.jpg');
+    }
+}
+
+@media screen and (min-width: 451px) {
+    .hero {
+        background: url('/images/hero-image_4-large.jpg');
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .body {
+        font-size: 13px;
+    }
+    .headerinner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 12px 25px;
+        margin-top: 0;
+    }
+
+    .nav-mob {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 15px;
+        list-style-type: none;
+    }
+
+    .headertitle {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    .menu_drawer {
+        line-height: 44px;
+        margin-top: 0px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav {
+        z-index: 10;
+        background-color: #850E35;
+        width: 100%;
+        position: absolute;
+        -webkit-transform: translate(100%, 0);
+        transform: translate(-100%, 0);
+        transition: transform 0.3s ease;
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .navitem {
+        display: list-item;
+        border-bottom: 1px solid #FFC4C4;
+        width: 100%;
+        text-align: left;
+    }
+
+    .info_title {
+        font-size: 18px;
+    }
+
+    .info_city {
+        font-size: 14px;
+    }
+
+    .info_desc {
+        font-size: 13px;
+    }
+
+    .detail_content {
+        padding: 5px;
+        overflow: auto;
+      }
+
+    .restaurant_info_detail {
+        padding: 9px 16px 16px 16px;
+    }
+
+    .restaurant_menu {
+        gap: 10px;
+        margin: auto;
+        padding-bottom: 5px;
+        border-top: 1px solid #850E35;
+        border-bottom: 1px solid #850E35;
+      }
+}
+
+@media screen and (min-width: 500px) {
+
+    .nav-mob {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 650px) {
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        background: url('/images/hero-image_4-xl.jpg');
+    }
+
+    main {
+        max-width: 1200px
+    }
+}
